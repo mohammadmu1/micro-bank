@@ -1,0 +1,10 @@
+services:
+  loans:
+    image: "mohammadmu/loans/:s4"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resource:
+        limits:
+          memory: 700m

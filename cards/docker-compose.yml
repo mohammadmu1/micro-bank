@@ -1,0 +1,10 @@
+services:
+  cards:
+    image: "mohammadmu/cards/:s4"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resource:
+        limits:
+          memory: 700m
